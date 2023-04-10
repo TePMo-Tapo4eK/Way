@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HeaderTop from '../widgets/Header/HeaderUp'
 import s from './styles/index.module.scss'
 import MainPage from '../pages/MainPage/MainPage'
@@ -9,9 +9,19 @@ import Subscribe from '../shared/ui/Modal/Subscribe/Subscribe'
 
 
 function App() {
+
+  const [Loading, setLoading] = useState(false)
+  
+  const LoadingPage = () => {
+    setTimeout(()=>{setLoading(true)}, 2000)
+  }
+  console.log(Loading)
+
+  useEffect(()=>{LoadingPage()}, [])
+
   return (
     <div className={s.App}>
-      {/* <LoadScreen/> */}
+      {!Loading ? <LoadScreen/> : null}
       <HeaderTop/>
       <MainPage/>
       <Footer/>
