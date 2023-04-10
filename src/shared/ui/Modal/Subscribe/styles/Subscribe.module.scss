@@ -1,0 +1,37 @@
+.Subscribe{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    &_Modal{
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position:relative;
+        left: calc(50% - 208px);
+        top: calc(50% - 114.5px);
+        width: 416px;
+        height: 229px;
+        padding: 26px 40px;
+        font-size: 10px;
+        justify-content: space-between;
+        button{
+            max-width: 150px;
+        }
+        p{
+            max-width: 70%;
+            font-weight: 700;
+        }
+        input{
+            height: 30px;
+            margin-bottom: 8px;
+            width: 90%;
+            border-bottom: 0.6px solid #cbcbcb;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+    }
+}

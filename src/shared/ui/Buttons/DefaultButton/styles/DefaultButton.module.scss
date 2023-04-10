@@ -1,0 +1,12 @@
+.DefaultButton{
+    height: 27px;
+    padding: 0 20px;
+    border: 0.6px solid #CACACA;
+    color: #60676B;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: #60676B12;
+    }
+}

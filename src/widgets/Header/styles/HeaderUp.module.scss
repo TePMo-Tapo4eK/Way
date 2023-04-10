@@ -1,0 +1,25 @@
+.Header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-family: 'Helvetica', serif;
+    height: 100px;
+    width: calc(100% - 240px);
+    margin: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_Menu{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        li{
+            display: flex;
+            align-items: center;
+            input{
+                border: none;
+                background-color: #0000;
+            }
+        }
+    }
+}
