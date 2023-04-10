@@ -8,5 +8,14 @@
     top: 0;
     left: 0;
     background-color: #8CC7EC;
-    z-index: 9999;
+    z-index: 999999;
+    animation: hidden 2s forwards;
+    @keyframes hidden {
+        0% {opacity: 1;}
+        60%{
+            opacity: 1;
+        }
+        100% {opacity: 0;
+        display: none;}
+    }
 }
