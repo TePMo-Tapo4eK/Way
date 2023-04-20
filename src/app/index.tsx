@@ -12,18 +12,18 @@ import RegistrationModal from '../shared/ui/Modal/Registration/Registration'
 function App() {
 
   const [Loading, setLoading] = useState(false)
+  const [isLogin, setIsLogin] = useState(false)
   
   const LoadingPage = () => {
     setTimeout(()=>{setLoading(true)}, 2000)
   }
-  console.log(Loading)
 
   useEffect(()=>{LoadingPage()}, [])
 
   return (
     <div className={s.App}>
       {!Loading ? <LoadScreen/> : null}
-      <RegistrationModal/>
+      {!isLogin ? <RegistrationModal setIsLogin={setIsLogin}/> : null}
       <HeaderTop/>
       <MainPage/>
       <Footer/>

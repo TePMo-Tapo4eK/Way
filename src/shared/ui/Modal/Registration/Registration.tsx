@@ -5,7 +5,7 @@ import close from '../../../../images/icons/close-line.svg'
 import { Formik, Form, Field } from "formik";
 
 
-const RegistrationModal = () => {
+const RegistrationModal = ({setIsLogin}:any) => {
     return(
         <div className={s.RegistrationModal_Screen}>
             <div className={s.RegistrationModal_Modal}>
@@ -50,7 +50,7 @@ const RegistrationModal = () => {
                         </Form>
                     </Formik>
                 </div>
-                <img src={close}/>
+                <img src={close} onClick={() => { setIsLogin(true)}}/>
             </div>
         </div>
     )
