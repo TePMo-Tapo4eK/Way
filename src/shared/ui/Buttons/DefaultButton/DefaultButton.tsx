@@ -7,7 +7,7 @@ interface props{
 
 const DefaultButton = ({text}:props):JSX.Element => {
     return(
-        <button className={s.DefaultButton}>{text}</button>
+        <button type="submit" className={s.DefaultButton}>{text}</button>
     )
 }
 export default DefaultButton
