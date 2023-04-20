@@ -6,6 +6,7 @@ import Footer from '../widgets/Footer/Footer'
 import LoadScreen from '../widgets/LoadScreen/LoadScreen'
 import Cookies from '../entities/Cookies/Cookies'
 import Subscribe from '../shared/ui/Modal/Subscribe/Subscribe'
+import RegistrationModal from '../shared/ui/Modal/Registration/Registration'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className={s.App}>
       {!Loading ? <LoadScreen/> : null}
+      <RegistrationModal/>
       <HeaderTop/>
       <MainPage/>
       <Footer/>
