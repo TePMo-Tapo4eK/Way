@@ -29,7 +29,7 @@ function App() {
       <HeaderTop/>
       <MainPage/>
       <Footer/>
-      {/* <Cookies/> */}
+      <Cookies/>
     </div>
   )
 }
