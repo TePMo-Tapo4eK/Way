@@ -24,10 +24,11 @@
         @media screen and (max-width: 750px) {
             flex-direction: column;
             background-color: #F0F0F0;
-            height: 330px;
+            min-height: 330px;
             width: 100%;
             padding: 30px;
             &_Buttons{
+                margin-top: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 7px;
