@@ -13,6 +13,7 @@ function App() {
 
   const [Loading, setLoading] = useState(false)
   const [isLogin, setIsLogin] = useState(false)
+  const [isSubscribe, setIsSubscribe] = useState(false)
   
   const LoadingPage = () => {
     setTimeout(()=>{setLoading(true)}, 2000)
@@ -24,11 +25,11 @@ function App() {
     <div className={s.App}>
       {!Loading ? <LoadScreen/> : null}
       {!isLogin ? <RegistrationModal setIsLogin={setIsLogin}/> : null}
+      {!isSubscribe ? <Subscribe setIsSubscribe={setIsSubscribe}/> : null}
       <HeaderTop/>
       <MainPage/>
       <Footer/>
       {/* <Cookies/> */}
-      <Subscribe/>
     </div>
   )
 }

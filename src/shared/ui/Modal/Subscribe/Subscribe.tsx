@@ -1,8 +1,9 @@
 import { FC } from "react";
 import s from './styles/Subscribe.module.scss'
 import DefaultButton from "../../../../shared/ui/Buttons/DefaultButton/DefaultButton";
+import close from '../../../../images/icons/close-line.svg'
 
-const Subscribe = () => {
+const Subscribe = ({setIsSubscribe}:any) => {
     return(
         <div className={s.Subscribe}>
             <div className={s.Subscribe_Modal}>
@@ -12,6 +13,7 @@ const Subscribe = () => {
                     <input placeholder="Имя"/>
                 </div>
                 <DefaultButton text='Подписаться'/>
+                <img src={close} onClick={() => {setIsSubscribe(true)}}/>
             </div>
         </div>
     )
