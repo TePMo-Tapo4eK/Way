@@ -9,4 +9,8 @@
     &:hover{
         background-color: #8CC7EC33;
     }
+    @media screen and (max-width: 444px) {
+        width: 100%;
+        height: 51px;
+    }
 }

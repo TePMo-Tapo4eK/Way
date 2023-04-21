@@ -1,4 +1,5 @@
 .RegistrationModal{
+    
     &_Screen{
         position: fixed;
         left: 0;
@@ -20,10 +21,23 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 900px) {
+            max-width: 445px;
+            max-height: 653px;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 444px) {
+            width: 100%;
+            max-height: 100vh;
+            flex-direction: column;
+        }
         img{
             position: absolute;
             right: 20px;
             top: 20px;
+            transform: scale(1.4);
             cursor: pointer;
         }
     }
@@ -38,6 +52,12 @@
         height: calc(100% - 134px);
         padding: 0 67px;
         border-right: 0.6px solid #CBCBCB;
+        @media screen and (max-width: 444px) {
+            padding: 0 17px 39px;
+            border: none;
+            margin-bottom: 0;
+            border-bottom: 0.6px solid #CBCBCB;
+        }
         .Form{
             display: flex;
             flex-direction: column;
@@ -50,6 +70,10 @@
                 border-bottom: 0.6px solid #CBCBCB;
                 &::placeholder{
                     color: #60676B;
+                }
+                @media screen and (max-width: 444px) {
+                    height: 42px;
+                    font-size: 13px;
                 }
             }
             :last-child{
@@ -65,6 +89,10 @@
         width: 100%;
         height: calc(100% - 134px);
         padding: 0 67px;
+        @media screen and (max-width: 444px) {
+            padding: 43px 17px 0;
+            margin-top: 0;
+        }
         .Form{
             display: flex;
             flex-direction: column;
@@ -77,6 +105,10 @@
                 border-bottom: 0.6px solid #CBCBCB;
                 &::placeholder{
                     color: #60676B;
+                }
+                @media screen and (max-width: 444px) {
+                    height: 42px;
+                    font-size: 13px;
                 }
             }
             a{
