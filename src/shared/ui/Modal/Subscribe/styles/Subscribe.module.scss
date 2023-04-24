@@ -1,25 +1,38 @@
 .Subscribe{
-    z-index: 99;
+    z-index: 999998;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 550px) {
+        padding: 0 20px;
+    }
     &_Modal{
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        position:relative;
-        left: calc(50% - 208px);
-        top: calc(50% - 114.5px);
+        justify-content: space-between;
         width: 416px;
         height: 229px;
         padding: 26px 40px;
         font-size: 10px;
-        justify-content: space-between;
+        position:absolute;
+        @media screen and (max-width: 550px) {
+            width: calc(100% - 40px);
+            left: 20px;
+        }
         button{
             max-width: 150px;
+            @media screen and (max-width: 550px) {
+                font-size: 10px;
+                width: 100%;
+                max-width: 100%;
+            }
         }
         p{
             max-width: 70%;
@@ -32,6 +45,9 @@
             border-bottom: 0.6px solid #cbcbcb;
             text-transform: uppercase;
             font-size: 10px;
+            @media screen and (max-width: 550px) {
+                width: 100%;
+            }
         }
         img{
             position: absolute;
