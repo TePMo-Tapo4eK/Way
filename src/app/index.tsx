@@ -11,8 +11,8 @@ import RegistrationModal from '../shared/ui/Modal/Registration/Registration'
 
 function App() {
 
-  const [Loading, setLoading] = useState(false)
-  const [isLogin, setIsLogin] = useState(false)
+  const [Loading, setLoading] = useState(true)
+  const [isLogin, setIsLogin] = useState(true)
   const [isSubscribe, setIsSubscribe] = useState(false)
   
   const LoadingPage = () => {
